@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx ts-node src/server.ts",
-    "dev": "npx nodemon src/server.ts"
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon src/server.ts",
+    "prettier": "prettier '{src,test}/**/*.ts' --write"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,10 @@
   "description": "",
   "dependencies": {
     "dotenv": "^17.2.3",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "pm2": "^6.0.13",
+    "prettier": "^3.6.2",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "@types/express": "^5.0.4",

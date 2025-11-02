@@ -3,14 +3,14 @@
 import dotenv from "dotenv";
 
 type ServerConfig = {
-    PORT:number,
-}
-export function loadConfig():void{
-dotenv.config();
+  PORT: number;
+};
+export function loadConfig(): void {
+  dotenv.config();
 }
 
 loadConfig();
 
-export let serverConfig : ServerConfig={
-PORT:Number(process.env.PORT) || 3001
+export let serverConfig: ServerConfig = {
+  PORT: Number(process.env.PORT) || 3001
 };
