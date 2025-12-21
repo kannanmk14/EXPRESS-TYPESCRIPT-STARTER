@@ -16,6 +16,8 @@
     "express": "^5.1.0",
     "pm2": "^6.0.13",
     "prettier": "^3.6.2",
+    "uuid": "^8.3.2",
+    "winston": "^3.18.3",
     "zod": "^4.1.12"
   },
   "devDependencies": {
